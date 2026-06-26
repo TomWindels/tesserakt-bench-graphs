@@ -1,0 +1,11 @@
+{{ $remoteFilePath := .Get "dir" }}
+{{ $localFilePath := print "static/" $remoteFilePath }}
+{{ $pattern := .Get "pattern" }}
+
+{{ range readDir $localFilePath }}
+  {{ $patternMatch := findRE $pattern .Name 1 }}
+  {{ $patternMatchLen := len $patternMatch }}
+  {{ if ge $patternMatchLen 1 }}
+  <img src="{{ print "/" $remoteFilePath "/" .Name }}" alt="{{ .Name }}" position="center" caption="{{ .Name }}" captionPosition="center"></img>
+  {{ end }}
+{{ end }}
