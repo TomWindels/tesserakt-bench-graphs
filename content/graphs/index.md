@@ -7,6 +7,14 @@ title = 'All Graphs'
 
 This page contains all graphs generated from benchmark data.
 
+#### Jump to section
+* [Size 1](#size-1)
+* [Size 2](#size-2)
+* [Size 4](#size-4)
+* [Size 8](#size-8)
+* [Size 16](#size-16)
+* [Size 32](#size-32)
+
 ### Size 1
 
 {{< graph-overview dir="graphs" pattern="^.+-1-.+$" >}}

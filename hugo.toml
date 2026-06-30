@@ -1,4 +1,31 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'tesserakt graphs'
 theme = 'terminal'
+
+[module]
+[[module.mounts]]
+disableWatch = false
+source = 'static'
+target = 'assets'
+
+[params]
+fullWidthTheme = true
+Toc = false
+# contentTypeName = "buckets"
+
+[languages.en.params.logo]
+logoText = 'tesserakt graphs'
+
+[languages.en.menu]
+[[languages.en.menu.main]]
+identifier = "about"
+name = "Categories"
+url = "/buckets"
+[[languages.en.menu.main]]
+identifier = "all-graphs"
+name = "All graphs"
+url = "/graphs"
+[languages.en.params]
+menuMore = "Show more"
+readMore = "Read more"

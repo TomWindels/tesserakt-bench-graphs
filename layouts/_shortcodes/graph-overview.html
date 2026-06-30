@@ -6,6 +6,43 @@
   {{ $patternMatch := findRE $pattern .Name 1 }}
   {{ $patternMatchLen := len $patternMatch }}
   {{ if ge $patternMatchLen 1 }}
-  <img src="{{ print "/" $remoteFilePath "/" .Name }}" alt="{{ .Name }}" position="center" caption="{{ .Name }}" captionPosition="center"></img>
+
+  {{ $name := .Name }}
+  {{ $graphFilePath := print "/" $remoteFilePath "/" .Name "/graph.png" }}
+  {{ $queryFilePath := print "/" $remoteFilePath "/" .Name "/query.rq" }}
+
+  {{ $query := resources.Get $queryFilePath }}
+  {{ $lang := "sparql" }}
+
+  <hr></hr>
+
+  {{ $name | print "### " | markdownify }}
+
+  <div style="display: flex; align-items: top;">
+
+    <!-- width="80%"
+    style="margin: auto; display: block;" -->
+
+
+  <img
+    src="{{ $graphFilePath }}"
+    alt="{{ $remoteFilePath }}"
+    position="center"
+    caption="{{ $remoteFilePath }}"
+    captionPosition="center">
+  </img>
+
+  <!-- Snippet from terminal theme, `code.html` shortcode -->
+  <details class="collapsable-code" style="margin-left: 20px; margin-top: 25px; margin-bottom: 25px; width: 30%;" open>
+      <summary title="Click to interact">
+          <span class="collapsable-code__title">{{ "Query" | markdownify }}</span>
+      </summary>
+      {{- transform.Highlight $query.Content $lang -}}
+  </details>
+
+  </div>
+
+  <hr></hr>
+
   {{ end }}
 {{ end }}

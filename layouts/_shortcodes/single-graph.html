@@ -1,0 +1,37 @@
+{{ $name := .Get "name" }}
+{{ $remoteFilePath := $name | print "/graphs/" }}
+{{ $graphFilePath := print $remoteFilePath "/graph.png" }}
+
+{{ $queryPath := print $remoteFilePath "/query.rq" }}
+{{ $query := resources.Get $queryPath }}
+{{ $lang := "sparql" }}
+
+<hr></hr>
+
+{{ $name | print "### " | markdownify }}
+
+<div style="display: flex; align-items: top;">
+
+  <!-- width="80%"
+  style="margin: auto; display: block;" -->
+
+
+<img
+  src="{{ $graphFilePath }}"
+  alt="{{ $remoteFilePath }}"
+  position="center"
+  caption="{{ $remoteFilePath }}"
+  captionPosition="center">
+</img>
+
+<!-- Snippet from terminal theme, `code.html` shortcode -->
+<details class="collapsable-code" style="margin-left: 20px; margin-top: 25px; margin-bottom: 25px; width: 30%;" open>
+    <summary title="Click to interact">
+        <span class="collapsable-code__title">{{ "Query" | markdownify }}</span>
+    </summary>
+    {{- transform.Highlight $query.Content $lang -}}
+</details>
+
+</div>
+
+<hr></hr>
