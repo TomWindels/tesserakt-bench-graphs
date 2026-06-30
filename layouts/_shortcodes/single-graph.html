@@ -1,6 +1,6 @@
 {{ $name := .Get "name" }}
 {{ $remoteFilePath := $name | print "/graphs/" }}
-{{ $graphFilePath := print $remoteFilePath "/graph.png" }}
+{{ $graphFilePath := print "/tesserakt-bench-graphs" $remoteFilePath "/graph.png" }}
 
 {{ $queryPath := print $remoteFilePath "/query.rq" }}
 {{ $query := resources.Get $queryPath }}

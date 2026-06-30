@@ -8,7 +8,7 @@
   {{ if ge $patternMatchLen 1 }}
 
   {{ $name := .Name }}
-  {{ $graphFilePath := print "/" $remoteFilePath "/" .Name "/graph.png" }}
+  {{ $graphFilePath := print "/tesserakt-bench-graphs/" $remoteFilePath "/" .Name "/graph.png" }}
   {{ $queryFilePath := print "/" $remoteFilePath "/" .Name "/query.rq" }}
 
   {{ $query := resources.Get $queryFilePath }}
