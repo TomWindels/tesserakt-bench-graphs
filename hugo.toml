@@ -3,6 +3,10 @@ locale = 'en-us'
 title = 'tesserakt graphs'
 theme = 'terminal'
 
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
+
 [module]
 [[module.mounts]]
 disableWatch = false
