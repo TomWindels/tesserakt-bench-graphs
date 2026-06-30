@@ -1,0 +1,41 @@
++++
+date = '2026-06-29T14:47:59+02:00'
+draft = false
+title = 'Worse'
+description = "Browse 34 graphs categorized as 'worse'"
++++
+
+{{< single-graph name=railway-batch-1-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_fe7739eaa456fa27aed5ee81aa6311e6 >}}
+{{< single-graph name=railway-batch-1-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_ff06618b5b4134ed24c7236cafcc142e >}}
+{{< single-graph name=railway-batch-2-inferred_batch_chain_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-2-inferred_batch_chain_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-2-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_fe7739eaa456fa27aed5ee81aa6311e6 >}}
+{{< single-graph name=railway-batch-2-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_ff06618b5b4134ed24c7236cafcc142e >}}
+{{< single-graph name=railway-batch-2-inferred_batch_semaphore_neighbor_inject_semaphore_neighbor_repair_semaphore_neighbor_de8dd12dd93ffbc513ab79f065e98421 >}}
+{{< single-graph name=railway-batch-2-inferred_batch_switch_monitored_inject_switch_monitored_repair_switch_monitored_7d0dc90d4fcb15d38daee8b7b7a01415 >}}
+{{< single-graph name=railway-batch-32-inferred_batch_chain_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-32-inferred_batch_chain_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
+{{< single-graph name=railway-batch-32-inferred_batch_chain_last_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-32-inferred_batch_chain_last_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-32-inferred_batch_chain_last_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
+{{< single-graph name=railway-batch-32-inferred_batch_star_8_inject_star_repair_star_f076d65feecf89a136168c09d8a48474 >}}
+{{< single-graph name=railway-batch-32-inferred_batch_star_last_2_inject_star_repair_star_f076d65feecf89a136168c09d8a48474 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_2_inject_chain_repair_chain_fc46975538e160c8e4c43e026f96ab6e >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_4_inject_chain_repair_chain_e60998d12cd6ca2eb333545c0ea31729 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_6_inject_chain_repair_chain_e60998d12cd6ca2eb333545c0ea31729 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_last_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_last_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-4-inferred_batch_chain_last_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
+{{< single-graph name=railway-batch-4-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_fe7739eaa456fa27aed5ee81aa6311e6 >}}
+{{< single-graph name=railway-batch-4-inferred_batch_connected_segments_inject_connected_segments_repair_connected_segments_ff06618b5b4134ed24c7236cafcc142e >}}
+{{< single-graph name=railway-batch-4-inferred_batch_switch_monitored_inject_switch_monitored_repair_switch_monitored_7d0dc90d4fcb15d38daee8b7b7a01415 >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_last_4_inject_chain_repair_chain_f56f043af9e37d94fc02c5ac406521d3 >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_last_6_inject_chain_repair_chain_518dc4189af1327389695095049790b8 >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_last_6_inject_chain_repair_chain_d3204f8886508aed058cc24a74068b9e >}}
+{{< single-graph name=railway-batch-8-inferred_batch_chain_last_8_inject_chain_repair_chain_6c404d70a050a111a5d5b5190cbe0e4c >}}
