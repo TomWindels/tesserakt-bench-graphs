@@ -1,0 +1,59 @@
+    ┌────────────────────┐
+    │ ?switchPosition <p │
+    │ > ?switch          │
+ ┌──│                    │
+ │  │ * cardinality: 177 │
+ │  │ * change count: 0  │
+ │  └────────────────────┘
+[ ]
+ │                                                                                                                                                  ┌─────────────────────┐
+ │                                                                                                                                                  │ ?switch <p> <o>     │
+ │                                                                                                                                               ┌──│                     │
+ │                                                                                                                                               │  │ * cardinality: 4617 │
+ │                                                                                                                                               │  │ * change count: 0   │
+ │                                                                                                                                               │  └─────────────────────┘
+ │                                                                                                                       ┌──< cardinality: 177 ─[ ]
+ │                                                                                                                       │                       │  ┌────────────────────┐
+ │                                                                                                                       │                       │  │ ?switch <p> <o>    │
+ │                                                                                                                       │                       └──│                    │
+ │                                                                                                                       │                          │ * cardinality: 177 │
+ │                                                                                                                       │                          │ * change count: 0  │
+ │                                                                                                                       │                          └────────────────────┘
+ │                                                                                               ┌──< cardinality: 413 ─[ ]
+ │                                                                                               │                       │  ┌─────────────────────┐
+ │                                                                                               │                       │  │ ?switch <p> ?sensor │
+ │                                                                                               │                       └──│                     │
+ │                                                                                               │                          │ * cardinality: 4853 │
+ │                                                                                               │                          │ * change count: 815 │
+ │                                                                                               │                          └─────────────────────┘
+ │                                                                       ┌──< cardinality: 413 ─[ ]
+ │                                                                       │                       │  ┌─────────────────────┐
+ │                                                                       │                       │  │ ?region <p> ?switch │
+ │                                                                       │                       └──│                     │
+ │                                                                       │                          │ * cardinality: 4617 │
+ │                                                                       │                          │ * change count: 0   │
+ │                                                                       │                          └─────────────────────┘
+ │                                               ┌──< cardinality: 413 ─[ ]
+ │                                               │                       │  ┌────────────────────┐
+ │                                               │                       │  │ ?switch <p> ?posit │
+ │                                               │                       │  │ ion                │
+ │                                               │                       └──│                    │
+ │                                               │                          │ * cardinality: 177 │
+ │                                               │                          │ * change count: 0  │
+ │                                               │                          └────────────────────┘
+ │                       ┌──< cardinality: 413 ─[ ]
+ │                       │                       │  ┌─────────────────────┐
+ │                       │                       │  │ ?trackElementBefore │
+ │                       │                       │  │  <p> ?switch        │
+ │                       │                       └──│                     │
+ │                       │                          │ * cardinality: 4617 │
+ │                       │                          │ * change count: 0   │
+ │                       │                          └─────────────────────┘
+ └──< cardinality: 413 ─[ ]
+                         │  ┌─────────────────────┐
+                         │  │ ?switch <p> ?trackE │
+                         │  │ lementAfter         │
+                         └──│                     │
+                            │ * cardinality: 4617 │
+                            │ * change count: 0   │
+                            └─────────────────────┘
