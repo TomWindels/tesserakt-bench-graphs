@@ -1,3 +1,20 @@
-code[data-lang=sparql] {
+.language-sparql {
     text-wrap: wrap;
+}
+
+/* src: https://dongheenam.info/posts/tabs-in-hugo/ */
+.tab-item {
+  display: none;
+}
+.tab-item.active {
+  display: block;
+}
+
+button {
+    border: none !important;
+}
+
+button.active {
+  /* styling for the active tab header */
+  border: 4px solid var(--accent) !important;
 }

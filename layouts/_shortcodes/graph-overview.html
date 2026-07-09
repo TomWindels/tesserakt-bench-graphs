@@ -18,7 +18,7 @@
 
   {{ $name | print "### " | markdownify }}
 
-  <div style="display: flex; align-items: top;">
+  <div style="display: flex; align-items: self-start;">
 
     <!-- width="80%"
     style="margin: auto; display: block;" -->
@@ -32,13 +32,21 @@
     captionPosition="center">
   </img>
 
-  <!-- Snippet from terminal theme, `code.html` shortcode -->
-  <details class="collapsable-code" style="margin-left: 20px; margin-top: 25px; margin-bottom: 25px; width: 30%;" open>
-      <summary title="Click to interact">
-          <span class="collapsable-code__title">{{ "Query" | markdownify }}</span>
-      </summary>
-      {{- transform.Highlight $query.Content $lang -}}
-  </details>
+  <div style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px; width: 30%;">
+    <!-- Snippet from terminal theme, `code.html` shortcode -->
+    <details class="collapsable-code" open>
+        <summary title="Click to interact">
+            <span class="collapsable-code__title">{{ "Query" | markdownify }}</span>
+        </summary>
+        {{- transform.Highlight $query.Content $lang -}}
+    </details>
+    <details class="collapsable-code" open>
+        <summary title="Click to interact">
+            <span class="collapsable-code__title">Query changes w.r.t. transform ratio</span>
+        </summary>
+      {{ partial "report-overview.html" (dict "graph" $name) }}
+    </details>
+    </div>
 
   </div>
 

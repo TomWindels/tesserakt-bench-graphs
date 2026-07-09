@@ -1,0 +1,42 @@
+<!-- inspired by: https://dongheenam.info/posts/tabs-in-hugo/ -->
+
+{{ $graph := .graph }}
+
+{{- $groupId := $graph -}}
+
+{{ $js := resources.Get "js/tabs.js" }}
+<script src="{{ $js.RelPermalink }}"></script>
+
+<div class="tab-container box highlight">
+
+{{ $localFilePath := $graph | print "/static/graphs/" }}
+{{ $reports := where (readDir $localFilePath) ".Name" "like" `.*-report-[\d]+\.txt` }}
+
+<div class="tab-header">
+{{ range $reports }}
+    <button
+      data-tab-item="{{ .Name }}"
+      data-tab-group="{{ $groupId }}"
+      class='tab-button collapsable-code__title'
+      onclick="switchTab('{{ $groupId }}','{{ .Name }}')">
+    {{ index (index (findRESubmatch `.*-report-([\d]+)\.txt` .Name) 0) 1 }}
+    </button>
+{{ end }}
+</div> <!-- tab header -->
+
+<div class="tab-content">
+{{ range $reports }}
+    {{ $reportPath := print "/graphs/" $graph "/" .Name }}
+    {{ $report := resources.Get $reportPath }}
+      <div
+        data-tab-item="{{ .Name }}"
+        data-tab-group="{{ $groupId }}"
+        class='tab-item'>
+<pre>
+{{ $report.Content }}
+</pre>
+      </div>
+{{ end }}
+</div> <!-- tab content -->
+
+</div> <!-- container box -->
