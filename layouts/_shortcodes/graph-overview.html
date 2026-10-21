@@ -24,6 +24,7 @@
     style="margin: auto; display: block;" -->
 
 
+  <div>
   <img
     src="{{ $graphFilePath }}"
     alt="{{ $remoteFilePath }}"
@@ -31,8 +32,10 @@
     caption="{{ $remoteFilePath }}"
     captionPosition="center">
   </img>
+  {{ partial "change-overview.html" (dict "graph" $name) }}
+  </div>
 
-  <div style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px; width: 30%;">
+  <div style="margin-left: 20px; margin-top: 5px; margin-bottom: 5px; flex-grow: 1;">
     <!-- Snippet from terminal theme, `code.html` shortcode -->
     <details class="collapsable-code" open>
         <summary title="Click to interact">
