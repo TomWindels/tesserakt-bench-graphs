@@ -1,0 +1,62 @@
+    ┌────────────────────┐
+    │ ?segment6 <p> ?seg │
+    │ ment7              │
+ ┌──│                    │
+ │  │ * cardinality: 592 │
+ │  │ * change count: 31 │
+ │  └────────────────────┘
+[ ]
+ │                                                                                                                                            ┌────────────────────┐
+ │                                                                                                                                            │ ?switch <p> ?segme │
+ │                                                                                                                                            │ nt1                │
+ │                                                                                                                                         ┌──│                    │
+ │                                                                                                                                         │  │ * cardinality: 592 │
+ │                                                                                                                                         │  │ * change count: 31 │
+ │                                                                                                                                         │  └────────────────────┘
+ │                                                                                                                  ┌──< cardinality: 38 ─[ ]
+ │                                                                                                                  │                      │  ┌────────────────────┐
+ │                                                                                                                  │                      │  │ ?switch <p> <o>    │
+ │                                                                                                                  │                      └──│                    │
+ │                                                                                                                  │                         │ * cardinality: 35  │
+ │                                                                                                                  │                         │ * change count: 10 │
+ │                                                                                                                  │                         └────────────────────┘
+ │                                                                                           ┌──< cardinality: 28 ─[ ]
+ │                                                                                           │                      │  ┌────────────────────┐
+ │                                                                                           │                      │  │ ?segment1 <p> ?seg │
+ │                                                                                           │                      │  │ ment2              │
+ │                                                                                           │                      └──│                    │
+ │                                                                                           │                         │ * cardinality: 592 │
+ │                                                                                           │                         │ * change count: 31 │
+ │                                                                                           │                         └────────────────────┘
+ │                                                                    ┌──< cardinality: 19 ─[ ]
+ │                                                                    │                      │  ┌────────────────────┐
+ │                                                                    │                      │  │ ?segment2 <p> ?seg │
+ │                                                                    │                      │  │ ment3              │
+ │                                                                    │                      └──│                    │
+ │                                                                    │                         │ * cardinality: 592 │
+ │                                                                    │                         │ * change count: 31 │
+ │                                                                    │                         └────────────────────┘
+ │                                             ┌──< cardinality: 19 ─[ ]
+ │                                             │                      │  ┌────────────────────┐
+ │                                             │                      │  │ ?segment3 <p> ?seg │
+ │                                             │                      │  │ ment4              │
+ │                                             │                      └──│                    │
+ │                                             │                         │ * cardinality: 592 │
+ │                                             │                         │ * change count: 31 │
+ │                                             │                         └────────────────────┘
+ │                      ┌──< cardinality: 19 ─[ ]
+ │                      │                      │  ┌────────────────────┐
+ │                      │                      │  │ ?segment4 <p> ?seg │
+ │                      │                      │  │ ment5              │
+ │                      │                      └──│                    │
+ │                      │                         │ * cardinality: 592 │
+ │                      │                         │ * change count: 31 │
+ │                      │                         └────────────────────┘
+ └──< cardinality: 19 ─[ ]
+                        │  ┌────────────────────┐
+                        │  │ ?segment5 <p> ?seg │
+                        │  │ ment6              │
+                        └──│                    │
+                           │ * cardinality: 592 │
+                           │ * change count: 31 │
+                           └────────────────────┘
